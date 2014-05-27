@@ -19,6 +19,13 @@
 		C23ACBC31934C2B5009BEEFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C23ACBAB1934C2B5009BEEFE /* UIKit.framework */; };
 		C23ACBCB1934C2B5009BEEFE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = C23ACBC91934C2B5009BEEFE /* InfoPlist.strings */; };
 		C23ACBCD1934C2B5009BEEFE /* ______viewcontrollerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C23ACBCC1934C2B5009BEEFE /* ______viewcontrollerTests.m */; };
+		C23ACBD81934C30C009BEEFE /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23ACBD71934C30C009BEEFE /* LoginViewController.m */; };
+		C23ACBDD1934C394009BEEFE /* LoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = C23ACBDA1934C394009BEEFE /* LoginView.m */; };
+		C23ACBDE1934C394009BEEFE /* LTView.m in Sources */ = {isa = PBXBuildFile; fileRef = C23ACBDC1934C394009BEEFE /* LTView.m */; };
+		C23ACBE11934C39E009BEEFE /* RegistView.m in Sources */ = {isa = PBXBuildFile; fileRef = C23ACBE01934C39E009BEEFE /* RegistView.m */; };
+		C23ACBE41934C3D6009BEEFE /* FindPasswordView.m in Sources */ = {isa = PBXBuildFile; fileRef = C23ACBE31934C3D6009BEEFE /* FindPasswordView.m */; };
+		C23ACBE71934C3FC009BEEFE /* RegistViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23ACBE61934C3FC009BEEFE /* RegistViewController.m */; };
+		C23ACBEA1934C413009BEEFE /* FindPasswordViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C23ACBE91934C413009BEEFE /* FindPasswordViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +55,20 @@
 		C23ACBC81934C2B5009BEEFE /* 作业登陆页面viewcontrollerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "作业登陆页面viewcontrollerTests-Info.plist"; sourceTree = "<group>"; };
 		C23ACBCA1934C2B5009BEEFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		C23ACBCC1934C2B5009BEEFE /* ______viewcontrollerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "______viewcontrollerTests.m"; sourceTree = "<group>"; };
+		C23ACBD61934C30C009BEEFE /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		C23ACBD71934C30C009BEEFE /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		C23ACBD91934C394009BEEFE /* LoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginView.h; sourceTree = "<group>"; };
+		C23ACBDA1934C394009BEEFE /* LoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginView.m; sourceTree = "<group>"; };
+		C23ACBDB1934C394009BEEFE /* LTView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LTView.h; sourceTree = "<group>"; };
+		C23ACBDC1934C394009BEEFE /* LTView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LTView.m; sourceTree = "<group>"; };
+		C23ACBDF1934C39E009BEEFE /* RegistView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistView.h; sourceTree = "<group>"; };
+		C23ACBE01934C39E009BEEFE /* RegistView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistView.m; sourceTree = "<group>"; };
+		C23ACBE21934C3D6009BEEFE /* FindPasswordView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordView.h; sourceTree = "<group>"; };
+		C23ACBE31934C3D6009BEEFE /* FindPasswordView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPasswordView.m; sourceTree = "<group>"; };
+		C23ACBE51934C3FC009BEEFE /* RegistViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegistViewController.h; sourceTree = "<group>"; };
+		C23ACBE61934C3FC009BEEFE /* RegistViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegistViewController.m; sourceTree = "<group>"; };
+		C23ACBE81934C413009BEEFE /* FindPasswordViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FindPasswordViewController.h; sourceTree = "<group>"; };
+		C23ACBE91934C413009BEEFE /* FindPasswordViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FindPasswordViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +130,20 @@
 			children = (
 				C23ACBB61934C2B5009BEEFE /* AppDelegate.h */,
 				C23ACBB71934C2B5009BEEFE /* AppDelegate.m */,
+				C23ACBD61934C30C009BEEFE /* LoginViewController.h */,
+				C23ACBD71934C30C009BEEFE /* LoginViewController.m */,
+				C23ACBE51934C3FC009BEEFE /* RegistViewController.h */,
+				C23ACBE61934C3FC009BEEFE /* RegistViewController.m */,
+				C23ACBE81934C413009BEEFE /* FindPasswordViewController.h */,
+				C23ACBE91934C413009BEEFE /* FindPasswordViewController.m */,
+				C23ACBD91934C394009BEEFE /* LoginView.h */,
+				C23ACBDA1934C394009BEEFE /* LoginView.m */,
+				C23ACBDF1934C39E009BEEFE /* RegistView.h */,
+				C23ACBE01934C39E009BEEFE /* RegistView.m */,
+				C23ACBE21934C3D6009BEEFE /* FindPasswordView.h */,
+				C23ACBE31934C3D6009BEEFE /* FindPasswordView.m */,
+				C23ACBDB1934C394009BEEFE /* LTView.h */,
+				C23ACBDC1934C394009BEEFE /* LTView.m */,
 				C23ACBB91934C2B5009BEEFE /* Images.xcassets */,
 				C23ACBAE1934C2B5009BEEFE /* Supporting Files */,
 			);
@@ -241,6 +276,13 @@
 			files = (
 				C23ACBB81934C2B5009BEEFE /* AppDelegate.m in Sources */,
 				C23ACBB41934C2B5009BEEFE /* main.m in Sources */,
+				C23ACBE11934C39E009BEEFE /* RegistView.m in Sources */,
+				C23ACBDD1934C394009BEEFE /* LoginView.m in Sources */,
+				C23ACBEA1934C413009BEEFE /* FindPasswordViewController.m in Sources */,
+				C23ACBD81934C30C009BEEFE /* LoginViewController.m in Sources */,
+				C23ACBDE1934C394009BEEFE /* LTView.m in Sources */,
+				C23ACBE71934C3FC009BEEFE /* RegistViewController.m in Sources */,
+				C23ACBE41934C3D6009BEEFE /* FindPasswordView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +399,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "作业登陆页面viewcontroller/作业登陆页面viewcontroller-Prefix.pch";
 				INFOPLIST_FILE = "作业登陆页面viewcontroller/作业登陆页面viewcontroller-Info.plist";
@@ -370,6 +413,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "作业登陆页面viewcontroller/作业登陆页面viewcontroller-Prefix.pch";
 				INFOPLIST_FILE = "作业登陆页面viewcontroller/作业登陆页面viewcontroller-Info.plist";
