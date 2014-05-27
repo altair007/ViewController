@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LTView.h"
 //注册页面
 @interface RegistView : UIView<UITextFieldDelegate>
 @property(nonatomic,retain,readonly)UIButton * registBT;
 @property(nonatomic,retain,readonly)UIButton * cancelBT;
-
+@property(nonatomic,retain,readonly)LTView * viewLT;
 @end

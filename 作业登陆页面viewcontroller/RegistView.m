@@ -9,12 +9,12 @@
 #import "RegistView.h"
 #import "LTView.h"
 
-@interface RegistView ()
-{
-    LTView * _viewLT;
-}
-
-@end
+//@interface RegistView ()
+//{
+//    LTView * _viewLT;
+//}
+//
+//@end
 
 
 @implementation RegistView
@@ -29,6 +29,20 @@
     }
     return self;
 }
+//- (void)layoutSubviews
+//{
+//    [super layoutSubviews];
+////    CGFloat width = self.bounds.size.width;
+////    CGPoint viewLTCenter = _viewLT.center;
+////    viewLTCenter.x = width/2;
+////    _viewLT.center = viewLTCenter;
+//    
+//    if (UIInterfaceOrientationIsPortrait([UIApplication sharedApplication].statusBarOrientation)) {
+//        <#statements#>
+//    }
+//    
+//    
+//}
 
 - (void)setupSubview
 {

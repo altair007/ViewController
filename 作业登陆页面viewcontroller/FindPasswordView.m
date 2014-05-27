@@ -11,7 +11,7 @@
 @implementation FindPasswordView
 - (void)dealloc
 {
-   
+    [_userTF release];
     [super dealloc];
 }
 
@@ -25,26 +25,47 @@
     }
     return self;
 }
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+  CGFloat width = self.bounds.size.width;
+    CGPoint userTFCenter = _userTF.center;
+    userTFCenter.x = width/2;
+    _userTF.center = userTFCenter;
+    
+    CGPoint cancleBTCenter = _cancelBT.center;
+    cancleBTCenter.x = 10*width/16;
+    _cancelBT.center = cancleBTCenter;
+    
+    CGPoint backBTCenter = _cancelBT.center;
+    backBTCenter.x = 6*width/16;
+    _backBT.center = backBTCenter;
+
+}
 
 - (void)setupSubview
 {
     //设置背景颜色和tag
     self.backgroundColor = [UIColor whiteColor];
     self.tag = 120;
+    
+   
+    
     //创建用户的textField
-    UITextField * userTF = [[UITextField alloc] initWithFrame:CGRectMake(60, 80, 180, 30)];
-    userTF.borderStyle = UITextBorderStyleRoundedRect;
-    userTF.placeholder = @"用户名/邮箱";
-    [self addSubview:userTF];
-    [userTF release];
+   _userTF = [[UITextField alloc] initWithFrame:CGRectMake(60, 80, 180, 30)];
+    
+    _userTF.borderStyle = UITextBorderStyleRoundedRect;
+    _userTF.placeholder = @"用户名/邮箱";
+    [self addSubview:_userTF];
+    [_userTF release];
     
     //创建找回的按钮
-    UIButton * findBT = [UIButton buttonWithType:UIButtonTypeSystem];
-    findBT.frame = CGRectMake(60, 120, 70, 30);
-    [findBT setTitle:@"找回" forState:UIControlStateNormal];
+    _backBT = [UIButton buttonWithType:UIButtonTypeSystem];
+    _backBT.frame = CGRectMake(60, 120, 70, 30);
+    [_backBT setTitle:@"找回" forState:UIControlStateNormal];
     //内部实现方法
-    [findBT addTarget:self action:@selector(didClickFindBTAction:) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:findBT];
+//    [findBT addTarget:self action:@selector(didClickFindBTAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:_backBT];
    
     //创建取消按钮
     _cancelBT = [UIButton buttonWithType:UIButtonTypeSystem];

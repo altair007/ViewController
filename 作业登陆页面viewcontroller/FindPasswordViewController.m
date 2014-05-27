@@ -15,6 +15,7 @@
 @end
 
 @implementation FindPasswordViewController
+
 - (void)dealloc
 {
     [_findPassword release];

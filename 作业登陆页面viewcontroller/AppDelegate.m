@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 #import "LoginViewController.h"
+#import "RegistViewController.h"
+#import "FindPasswordViewController.h"
 
 @implementation AppDelegate
 - (void)dealloc
@@ -27,7 +29,13 @@
     self.window.rootViewController = loginVC;
     [loginVC release];
     
-    
+    RegistViewController * registVC = [[RegistViewController alloc] init];
+    self.window.rootViewController = registVC;
+    [registVC release];
+
+//    FindPasswordViewController * findPasswordVC = [[FindPasswordViewController alloc] init];
+//    self.window.rootViewController = findPasswordVC;
+//    [findPasswordVC release];
     
     
     return YES;

@@ -7,9 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
 //找回密码页面
 @interface FindPasswordView : UIView
 
 @property(nonatomic,retain,readonly)UIButton * cancelBT;
+@property(nonatomic,retain,readonly)UITextField * userTF;
+@property(nonatomic,retain,readonly)UIButton * backBT;
 @end
