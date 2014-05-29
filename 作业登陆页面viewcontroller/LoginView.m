@@ -22,6 +22,7 @@
 @implementation LoginView
 - (void)dealloc
 {
+    // ???: 你可以使用点语法 :  self.userLT = nil;
     [_userLT release];
     [_passwordLT release];
     [super dealloc];
@@ -35,7 +36,9 @@
      }
     return self;
 }
-
+// ???: 如果你再有些耐心的话,会发现另外一个规律:想要得到旋转时,总能自动居中的效果,只需要满足一个条件:  翻转前,控件的中心点(x0,y0)距离屏幕的竖直中分线的距离(width/2-x0) 等于  翻转后,控件的中心点(x1,y1)距离屏幕的竖直中分线的距离(height/2 - x1).==> x1-x0 = (height - width)/2  ==> x1 = x0 + (height - width)/2 ==>意思是说,任何控件,只需要在选转后,让其x坐标在原来的基础上加上一个固定值---屏幕的(height - width) / 2  就可以正确居中!可以试一下,真的可行!!!!
+// ???:另外,上述算法无法处理逆时针home键从左到上再到右或者home键从右到上再到左的情况.经验证,对于上述两种情况:前者,ios会直接识别成,从home键在左的方向,顺时针直接旋转到home键在右的方向;后者,ios会直接识别成,从houme键在右的方向,逆时针直接旋转到home键在右的方向.前者的起始位置是UIDeviceOrientationLandscapeLeft, 将要旋转到的方向是UIDeviceOrientationLandscapeRight;后者的起始位置是UIDeviceOrientationLandscapeRight,将要旋转到的位置是UIDeviceOrientationLandscapeLeft.这两种情况应该区别对待.仔细观察下,规律就是:frame保持不变!
+// ???: 综上:你需要在控制器的willRotateToInterfaceOrientation:duration:的方法里实现此算法的简化版本.另外可以通过[UIApplication sharedApplication].statusBarOrientation获取屏幕的当前方向,可以根据willRotateToInterfaceOrientation:duration:的toInterfaceOrientation参数获取屏幕的将要旋转到的方向.我觉得以上足以写出完整的代码了!!!
 - (void)layoutSubviews
 {
     [super layoutSubviews];
